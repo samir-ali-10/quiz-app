@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="high_score">
+                    <button>view highscores<i class="fa-solid fa-hand-point-up fa-rotate-270"></i></button>
+                </div>
+                <div class="time">time: <span class="seconds"></span></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="start_game">
+            <div class="main_card">
+                <h2>coding quiz challenge</h2>
+                <p>try to answer the following code-related questions within the time limit.</p>
+                <p>keep in mind that incorrect answers will penalize your score/time by 10 seconds</p>
+                <div class="start">
+                    <button>start quiz</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question_card" class="hide">
+            <div class="main_card">
+                <h2></h2>
+                <div class="answers">
+                </div>
+                <div class="check_answer"></div>
+            </div>
+        </div>
+
+        <div id="all_done" class="hide">
+            <div class="main_card">
+                <h1>All done!</h1>
+                <h2>Your final score is: <span id="score"></span></h2>
+                <div class="row">
+                    <h2>Enter Initials: <input type="text" id="initials" maxlength="2"></h2>
+                    <button class="btn" id="submit_score">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="highscore" class="hide">
+            <div class="card">
+                <h2>highscores</h2>
+                <div class="scores">
+                </div>
+                <div class="buttons">
+                    <button class="go_back">go back</button>
+                    <button class="clear_score">clear highscores</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
