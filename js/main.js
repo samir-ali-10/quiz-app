@@ -1,6 +1,7 @@
 let startBtn = document.querySelector("#start_game .start"),
     timeSeconds = document.querySelector("header .time .seconds"),
     mainCount = document.querySelector("header .time"),
+    showHighscoreBtn = document.querySelector("header .high_score"),
     scoreCard = document.querySelector("#all_done");
 
 let infoGame = document.querySelector("#start_game");
@@ -236,5 +237,15 @@ goBack.addEventListener("click", () => {
     highscoreCard.classList.add("hide");
     infoGame.classList.remove("hide");
 });
+
+showHighscoreBtn.addEventListener("click", () => {
+    if (!questionCard.classList.contains("hide") || !scoreCard.classList.contains("hide")) {
+        return;
+    }
+    else {
+        highscoreCard.classList.remove("hide");
+        infoGame.classList.add("hide");
+    }
+})
 
 
