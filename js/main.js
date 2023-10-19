@@ -231,6 +231,7 @@ clearScore.addEventListener("click", () => {
     infoGame.classList.remove("hide");
     localStorage.clear();
     emptyHightScore();
+    location.reload();
 });
 
 goBack.addEventListener("click", () => {
